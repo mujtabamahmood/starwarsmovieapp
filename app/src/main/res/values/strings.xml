@@ -7,10 +7,10 @@
 
     <!--  Search screen -->
     <string name="search_characters">Search characters</string>
-    <string name="hey_there">Hey There</string>
-    <string name="description">Let\'s find out more about Star wars characters</string>
+    <string name="app_title">Discover Star Wars</string>
+    <string name="description">Expolore Star wars characters</string>
     <string name="no_results">No Results</string>
-    <string name="no_results_description">Try typing a name of a star wars characters</string>
+    <string name="no_results_description">Type a character\'s name from the Star Wars movie</string>
 
     <!--  Details screen -->
     <string name="population_value">%s\'s planet population is %s</string>
@@ -23,12 +23,6 @@
     <string name="height_in_cm_and_feet">%s / %s</string>
     <string name="title_activity_search_characters">Search Characters</string>
     <string name="title_activity_details_characters">DetailsCharactersActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
 </resources>
