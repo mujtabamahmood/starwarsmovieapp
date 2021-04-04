@@ -1,5 +1,6 @@
 package com.a.androidmovieapp.data.common
 
+import com.a.androidmovieapp.R
 import retrofit2.HttpException
 import java.io.IOException
 import java.net.SocketTimeoutException
@@ -16,14 +17,14 @@ object RequestErrorHandler {
                 handleHttpException(throwable)
             }
             is IOException -> {
-                DataSourceException.Connection(1)
+                DataSourceException.Connection(R.string.network_connection_error)
             }
 
             is SocketTimeoutException -> {
-                DataSourceException.Timeout(1)
+                DataSourceException.Timeout(R.string.network_connection_error)
             }
             else -> {
-                DataSourceException.Unexpected(1)
+                DataSourceException.Unexpected(R.string.unexpected_error_message)
             }
         }
     }

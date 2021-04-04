@@ -48,7 +48,7 @@ class SearchCharactersActivity : AppCompatActivity() {
 
     private fun checkInternetAvailability() {
         ConnectionLiveData(this).observe(this){
-            if(!it) toast(getString(R.string.error_network))
+            if(!it) toast(getString(R.string.network_connection_error))
         }
     }
 

@@ -2,8 +2,8 @@
     <string name="app_name">Stars Wars App</string>
 
     <!--Common-->
-    <string name="error_network">Please check your Internet Connection.</string>
-    <string name="error_unexpected_message">Something went wrong, please try again.</string>
+    <string name="network_connection_error">Something wrong with your internet, Please check your Internet Connection.</string>
+    <string name="unexpected_error_message">Unexpected problem, please try again.</string>
 
     <!--  Search screen -->
     <string name="search_characters">Search characters</string>

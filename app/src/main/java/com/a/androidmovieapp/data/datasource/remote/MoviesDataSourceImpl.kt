@@ -1,5 +1,6 @@
 package com.a.androidmovieapp.data.datasource.remote
 
+import com.a.androidmovieapp.R
 import com.a.androidmovieapp.data.common.DataSourceException
 import com.a.androidmovieapp.data.common.MoviesResult
 import com.a.androidmovieapp.data.common.RequestErrorHandler
@@ -12,7 +13,6 @@ import com.a.androidmovieapp.data.response.SpecieResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
-import kotlin.Exception
 
 class MoviesDataSourceImpl(private val moviesApi: MoviesServices) : MoviesDataSource {
     override suspend fun searchCharacters(input: String): MoviesResult<List<CharacterResponse>?> {
@@ -56,7 +56,7 @@ class MoviesDataSourceImpl(private val moviesApi: MoviesServices) : MoviesDataSo
             if (species.isNotEmpty()) {
                 MoviesResult.Success(species)
             } else {
-                MoviesResult.Error(DataSourceException.Server(1))
+                MoviesResult.Error(DataSourceException.Server(R.string.unexpected_error_message))
             }
         } catch (e: Exception) {
             MoviesResult.Error(RequestErrorHandler.getRequestError(e))
@@ -79,7 +79,7 @@ class MoviesDataSourceImpl(private val moviesApi: MoviesServices) : MoviesDataSo
             if (movies.isNotEmpty()) {
                 MoviesResult.Success(movies)
             } else {
-                MoviesResult.Error(DataSourceException.Server(2))
+                MoviesResult.Error(DataSourceException.Server(R.string.unexpected_error_message))
             }
         } catch (e: Exception) {
             MoviesResult.Error(RequestErrorHandler.getRequestError(e))
