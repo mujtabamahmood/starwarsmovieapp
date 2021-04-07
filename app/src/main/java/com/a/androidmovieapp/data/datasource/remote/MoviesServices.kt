@@ -1,4 +1,4 @@
-package com.a.androidmovieapp.data.common.datasource.remote
+package com.a.androidmovieapp.data.datasource.remote
 
 import com.a.androidmovieapp.data.common.GET_SEARCH_CHARACTERS_URL
 import com.a.androidmovieapp.data.response.ListCharacterResponse

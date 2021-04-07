@@ -32,15 +32,15 @@ object RequestErrorHandler {
     private fun handleHttpException(httpException: HttpException): DataSourceException {
         return when (httpException.code()){
             in CLIENT_START_HTTP_CODE..CLIENT_END_HTTP_CODE -> {
-                DataSourceException.Client(1)
+                DataSourceException.Client(R.string.unexpected_error_message)
 
             }
             in SERVER_START_HTTP_CODE..SERVER_END_HTTP_CODE ->{
-                DataSourceException.Server("server error")
+                DataSourceException.Server(R.string.unexpected_server_error_message)
             }
 
             else -> {
-                DataSourceException.Unexpected(1)
+                DataSourceException.Unexpected(R.string.unexpected_error_message)
             }
         }
     }

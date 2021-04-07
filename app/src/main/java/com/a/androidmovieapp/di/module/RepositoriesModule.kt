@@ -1,6 +1,6 @@
 package com.a.androidmovieapp.di.module
 
-import com.a.androidmovieapp.data.common.datasource.remote.MoviesServices
+import com.a.androidmovieapp.data.datasource.remote.MoviesServices
 import com.a.androidmovieapp.data.datasource.remote.MoviesDataSourceImpl
 import com.a.androidmovieapp.data.repository.MoviesRepositoryImpl
 import com.a.androidmovieapp.domain.repository.MoviesRepository

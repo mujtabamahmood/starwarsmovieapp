@@ -5,7 +5,6 @@ import com.a.androidmovieapp.data.common.DataSourceException
 import com.a.androidmovieapp.data.common.MoviesResult
 import com.a.androidmovieapp.data.common.RequestErrorHandler
 import com.a.androidmovieapp.data.common.asyncAll
-import com.a.androidmovieapp.data.common.datasource.remote.MoviesServices
 import com.a.androidmovieapp.data.response.CharacterResponse
 import com.a.androidmovieapp.data.response.MovieResponse
 import com.a.androidmovieapp.data.response.PlanetResponse

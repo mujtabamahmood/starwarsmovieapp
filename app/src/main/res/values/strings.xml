@@ -4,6 +4,7 @@
     <!--Common-->
     <string name="network_connection_error">Something wrong with your internet, Please check your Internet Connection.</string>
     <string name="unexpected_error_message">Unexpected problem, please try again.</string>
+    <string name="unexpected_server_error_message">Unexpected server problem, please try again.</string>
 
     <!--  Search screen -->
     <string name="search_characters">Search characters</string>

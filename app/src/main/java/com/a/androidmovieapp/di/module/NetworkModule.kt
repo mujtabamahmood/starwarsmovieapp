@@ -1,7 +1,7 @@
 package com.a.androidmovieapp.di.module
 
 import com.a.androidmovieapp.data.common.BASE_URL
-import com.a.androidmovieapp.data.common.datasource.remote.MoviesServices
+import com.a.androidmovieapp.data.datasource.remote.MoviesServices
 import com.facebook.stetho.BuildConfig
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import dagger.Module
